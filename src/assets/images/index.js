@@ -1,0 +1,31 @@
+export { default as Background } from './background.jpg';
+export { default as DebitCard } from './debit-card.png';
+export { default as Spinner } from './spinner.svg';
+export { default as ArrowBack } from './arrow-back.svg';
+export { default as ArrowDown } from './arrow-down.svg';
+export { default as EtcInfo } from './etc-info.svg';
+export { default as IconBankColored } from './icon-bank-colored.svg';
+export { default as IconBank } from './icon-bank.svg';
+export { default as IconList } from './icon-list.svg';
+export { default as IconChecklist } from './icon-checklist-board.svg';
+export { default as IconError } from './icon-error.svg';
+export { default as IconFaceId } from './icon-face-id.svg';
+export { default as IconId } from './icon-id.svg';
+export { default as IconPassport } from './icon-passport.svg';
+export { default as IconSmsSent } from './icon-sms-sent.svg';
+export { default as IconSms } from './icon-sms.svg';
+export { default as IconUser } from './icon-user.svg';
+export { default as IdCard } from './id-card.svg';
+export { default as Info } from './info.svg';
+export { default as InputId } from './input-id.svg';
+export { default as InputPhone } from './input-phone.svg';
+export { default as Selfie } from './selfie.svg';
+export { default as VtbLogo } from './vtb-logo.svg';
+export { default as Gel } from './gel.svg';
+export { default as DotsLoader } from './dots-loader.svg';
+export { default as Check } from './check.svg';
+export { default as ScreenRotate } from './screen-rotate.svg';
+export { default as Maintenance } from './maintenance.svg';
+export { default as Wallet } from './wallet.svg';
+
+

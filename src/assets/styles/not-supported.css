@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.old-browser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin: -100px 0 0 -200px;
+    width: 400px;
+}
+
+.old-browser>img {
+    margin-bottom: 20px;
+}
+.old-browser>h2 {
+    margin-bottom: 20px;
+}
+
+.old-browser>div {
+    box-sizing: border-box;
+    background: rgb(238, 238, 238);
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 120%;
+}

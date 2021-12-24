@@ -1,0 +1,175 @@
+/* Short Reset
+...................*/
+html,
+body,
+div,
+span,
+object,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+em,
+img,
+strong,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 100%;
+    list-style: none outside none;
+}
+
+body {
+    background-color: #fff;
+    color: var(--text-dark);
+    font-family: var(--font-main);
+    font-size: 15px;
+}
+
+* {
+    outline: none;
+}
+
+br {
+    clear: both;
+    margin: 10px;
+    width: 100%;
+}
+
+/* Shared Rules
+...................*/
+a {
+    color: var(--accent);
+    /* text-decoration: none; */
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+}
+
+body .hidden {
+    display: none;
+}
+
+/* Aligners
+.................. */
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: Right;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Scrollbars
+.................. */
+/* ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+::-webkit-scrollbar-button {}
+
+::-webkit-scrollbar-track {
+    background: #20242a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    box-shadow: 0px 0px 6px #090909 inset;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3f4651;
+    border-radius: 5px;
+    border: 2px #131518 solid;
+}
+
+::-webkit-scrollbar-corner {
+    background: #20242a;
+}
+
+::-webkit-resizer {
+    color: #21262c;
+    background-color: #21262c;
+    cursor: default;
+} */

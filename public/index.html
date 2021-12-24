@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ge">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="VTB Onboarding" />
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <title>VTB - Onboarding</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script id="config-script" src="/config.js"></script>
+  <script type="text/javascript">
+    (function () {
+      var config_script = document.getElementById("config-script");
+      var ts = new Date().getTime();
+      config_script.src = config_script.src + '?v=' + ts;
+    })()
+  </script>
+</body>
+
+</html>

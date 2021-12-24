@@ -1,0 +1,58 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="15"
+    viewBox="0 0 80.4 16.3" style="enable-background:new 0 0 80.4 16.3;" xml:space="preserve">
+    <style type="text/css">
+        .dot {
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            fill: #ACB6C3;
+            animation: animateDot 2s infinite ease-out;
+        }
+
+        #dot1 {
+            animation-delay: 0.4s;
+        }
+
+        #dot2 {
+            animation-delay: 0.6s;
+        }
+
+        #dot3 {
+            animation-delay: 0.8s;
+        }
+
+        #dot4 {
+            animation-delay: 1s;
+        }
+
+        #dot5 {
+            animation-delay: 1.2s;
+        }
+
+        @keyframes animateDot {
+
+            10%,
+            100% {
+                r: 3.5;
+                fill: #ACB6C3;
+            }
+
+            25% {
+                r: 6.5;
+                fill: #2F3441;
+            }
+
+            60% {
+                r: 6.5;
+                fill: #2F3441;
+            }
+        }
+    </style>
+    <g
+        transform="translate(-643.000000, -496.000000) translate(680.000000, 500.500000) rotate(-180.000000) translate(-680.000000, -500.500000) translate(643.000000, 496.000000)">
+        <circle id="dot1" class="dot" cx="66.3" cy="0.9" r="3.5" />
+        <circle id="dot2" class="dot" cx="49.3" cy="0.9" r="3.5" />
+        <circle id="dot3" class="dot" cx="32.3" cy="0.9" r="3.5" />
+        <circle id="dot4" class="dot" cx="16.3" cy="0.9" r="3.5" />
+        <circle id="dot5" class="dot" cx="0.3" cy="0.9" r="3.5" />
+    </g>
+</svg>

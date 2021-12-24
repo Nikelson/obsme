@@ -1,0 +1,57 @@
+{
+  "name": "onboarding-sme",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.4",
+    "is_js": "^0.9.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-code-input": "^3.10.1",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.2",
+    "react-input-mask": "^2.0.4",
+    "react-notifications-component": "^3.1.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "cross-env REACT_APP_ENV=test react-scripts start",
+    "build": "cross-env REACT_APP_ENV=test react-scripts build",
+    "deploy": "cross-env REACT_APP_ENV=test react-scripts build && deploy.bat",
+    "start:prod": "cross-env REACT_APP_ENV=production react-scripts start",
+    "build:prod": "cross-env REACT_APP_ENV=production react-scripts build",
+    "deploy:prod": "cross-env REACT_APP_ENV=production react-scripts build && deploy.bat",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 10",
+      "ie 9"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 10",
+      "ie 9"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

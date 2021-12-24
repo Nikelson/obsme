@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://test-onboarding-v2.vtb.ge/assets/fonts/fonts.css">
+
+    <style>
+        body {
+            background-color: #fff;
+            color: #2f3441;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+
+        .center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Helvetica Neue';
+            padding: 0px 50px;
+        }
+
+        .wrapper h2 {
+            font-size: 20px;
+            color: #2f3441;
+        }
+
+        .wrapper p {
+            line-height: 15px;
+            font-size: 14px;
+            color: #6b7683;
+        }
+
+        .wrapper>* {
+            margin: 20px 0;
+        }
+
+        .main-btn {
+            font-family: inherit;
+            position: relative;
+            border: none;
+            background: none;
+            color: #fff;
+            z-index: 1;
+            cursor: pointer;
+            font-size: 18px;
+            padding: .45em 2em;
+            min-width: 190px;
+            box-sizing: border-box;
+            min-height: 45px;
+        }
+
+        .main-btn:active {
+            top: 1px;
+        }
+
+        .main-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 7px;
+            box-shadow: 2px 8px 25px 0 rgba(19, 95, 0, .15), 2px 2px 4px 0 rgba(0, 132, 45, .07);
+            background: linear-gradient(102deg, #39e75b, #2db747);
+            transform: skew(-7deg);
+            z-index: -1;
+        }
+
+        .main-btn:active::before {
+            box-shadow: 1px 1px 10px 0 rgba(19, 95, 0, .15), 2px 2px 4px 0 rgba(0, 132, 45, .07);
+        }
+
+        .main-btn:disabled {
+            cursor: default;
+        }
+
+        .main-btn:disabled:before {
+            background: var(--grad-grey-dark);
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper text-center">
+        <h2>ვერიფიკაციის გასავლელად თქვენს მოწყობილობას აუცილებელია ჰქონდეს კამერა</h2>
+
+        <div class="thumb">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDkiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjNEQ0RDREIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgIDxnIGZpbGwtb3BhY2l0eT0iLjgiPgogICAgICAgICAgICA8cGF0aCBkPSJNMzkuNjE3IDU4LjUySDM0LjUxYTEuMjgzIDEuMjgzIDAgMCAxLTEuMjc3LTEuMjljMC0uNzEyLjU3MS0xLjI5IDEuMjc3LTEuMjloMy44M3YtMy44N2MwLS43MTIuNTctMS4yOSAxLjI3Ni0xLjI5LjcwNSAwIDEuMjc2LjU3OCAxLjI3NiAxLjI5djUuMTZjMCAuNzEzLS41NyAxLjI5LTEuMjc2IDEuMjl6TTE1LjQ3NiA1OC41MmgtNS4xMDdhMS4yODMgMS4yODMgMCAwIDEtMS4yNzYtMS4yOXYtNS4xNmMwLS43MTIuNTcxLTEuMjkgMS4yNzYtMS4yOS43MDUgMCAxLjI3Ny41NzggMS4yNzcgMS4yOXYzLjg3aDMuODNjLjcwNSAwIDEuMjc2LjU3OCAxLjI3NiAxLjI5IDAgLjcxMy0uNTcxIDEuMjktMS4yNzYgMS4yOXpNMjUgNDQuMDVhMS4yODMgMS4yODMgMCAwIDEtMS4yNzctMS4yOXYtMi45MmgtMi44OWExLjI4MyAxLjI4MyAwIDAgMS0xLjI3Ni0xLjI5YzAtLjcxMy41NzEtMS4yOSAxLjI3Ni0xLjI5aDIuODl2LTIuOTJjMC0uNzEzLjU3Mi0xLjI5IDEuMjc3LTEuMjlzMS4yNzcuNTc3IDEuMjc3IDEuMjl2Mi45MmgyLjg5Yy43MDUgMCAxLjI3Ni41NzcgMS4yNzYgMS4yOSAwIC43MTItLjU3MSAxLjI5LTEuMjc2IDEuMjloLTIuODl2Mi45MmMwIC43MTItLjU3MiAxLjI5LTEuMjc3IDEuMjl6TTEwLjM3IDI2LjMxOGExLjI4MyAxLjI4MyAwIDAgMS0xLjI3Ny0xLjI5di01LjE2YzAtLjcxMi41NzEtMS4yOSAxLjI3Ni0xLjI5aDUuMTA3Yy43MDUgMCAxLjI3Ni41NzggMS4yNzYgMS4yOSAwIC43MTMtLjU3MSAxLjI5LTEuMjc2IDEuMjloLTMuODN2My44N2MwIC43MTMtLjU3MiAxLjI5LTEuMjc3IDEuMjl6TTM5LjQ3NiAyNi4zMThjLjcwNSAwIDEuMjc2LS41NzcgMS4yNzYtMS4yOXYtNS4xNmMwLS43MTItLjU3MS0xLjI5LTEuMjc2LTEuMjloLTUuMTA3Yy0uNzA1IDAtMS4yNzYuNTc4LTEuMjc2IDEuMjkgMCAuNzEzLjU3MSAxLjI5IDEuMjc2IDEuMjloMy44M3YzLjg3YzAgLjcxMy41NzIgMS4yOSAxLjI3NyAxLjI5eiIvPgogICAgICAgIDwvZz4KICAgICAgICA8cGF0aCBkPSJNMjUuNDk4IDc1LjA2NmExLjQzNSAxLjQzNSAwIDAgMC0xLjAxNSAyLjQ0N2wuMDUyLjA1NGExLjQ1IDEuNDUgMCAwIDAgMS45NzgtLjA0OGwuMDA2LS4wMDZjLjI1NS0uMjU5LjQxNS0uNjE2LjQxNS0xLjAxNSAwLS4zOTktLjE2LS43NTktLjQxNS0xLjAxN2wtLjAwMy4wMDNhMS40MzMgMS40MzMgMCAwIDAtMS4wMTgtLjQxOHptLTMuMTgtMS43NDhBNC40ODIgNC40ODIgMCAwIDEgMjUuNDk4IDcyYzEuMjQxIDAgMi4zNy41MDQgMy4xODQgMS4zMThsLS4wMDMuMDAzLjAwMy4wMDNBNC40OSA0LjQ5IDAgMCAxIDMwIDc2LjQ5OGMwIDEuMjM4LS41MDcgMi4zNjEtMS4zMTggMy4xNzhsLS4wMDYuMDA2YTQuNDg0IDQuNDg0IDAgMCAxLTYuMjQ3LjEwMmwtLjExMS0uMTAyQTQuNDk1IDQuNDk1IDAgMCAxIDIxIDc2LjQ5OGMwLTEuMjQ0LjUwNC0yLjM2NyAxLjMxOC0zLjE4ek0zMy4yNTggNzdDMzIuNTY1IDc3IDMyIDc2LjMyNiAzMiA3NS40OThjMC0uODI3LjU2NS0xLjQ5OCAxLjI1OC0xLjQ5OGg2LjQ4N2MuNjkzIDAgMS4yNTUuNjcxIDEuMjU1IDEuNDk4IDAgLjgyOC0uNTY1IDEuNTAyLTEuMjU1IDEuNTAyaC02LjQ4N3oiLz4KICAgICAgICA8cGF0aCBkPSJNNDguOTk3IDEyLjAzMWExLjM4IDEuMzggMCAwIDEtMi43NTcgMFY4LjQ4YTUuNzAyIDUuNzAyIDAgMCAwLTEuNjg2LTQuMDQybC0uMDYzLS4wNjhhNS43NDIgNS43NDIgMCAwIDAtMy45ODgtMS42MTZIOC40OTNhNS43MyA1LjczIDAgMCAwLTQuMDUgMS42ODRBNS43MTIgNS43MTIgMCAwIDAgMi43NTcgOC40OHY3MS4wNDJjMCAxLjU3My42NDggMy4wMDUgMS42ODYgNC4wNDJsLjA2My4wNjlhNS43NDkgNS43NDkgMCAwIDAgMy45OSAxLjYxNUg0MC41MWE1LjcyMiA1LjcyMiAwIDAgMCA0LjA0OC0xLjY4NCA1LjcxMiA1LjcxMiAwIDAgMCAxLjY4Ni00LjA0MlY1OC4yMDZhMS4zOCAxLjM4IDAgMCAxIDIuNzU3IDBWNzkuNTJhOC40NTQgOC40NTQgMCAwIDEtMi40OTMgNS45OUE4LjQ4NCA4LjQ4NCAwIDAgMSA0MC41MSA4OEg4LjQ5NGE4LjQ3MyA4LjQ3MyAwIDAgMS01LjkwNC0yLjQwNGwtLjA5Ny0uMDg4QTguNDQyIDguNDQyIDAgMCAxIDAgNzkuNTJWOC40NzlhOC40NSA4LjQ1IDAgMCAxIDIuNDk2LTUuOTlBOC40NzggOC40NzggMCAwIDEgOC40OTQgMGgzMi4wMTJjMi4yODcgMCA0LjM3LjkyIDUuOTAxIDIuNDAzbC4wOTguMDlhOC40NiA4LjQ2IDAgMCAxIDIuNDkyIDUuOTl2My41NDh6Ii8+CiAgICAgICAgPHBhdGggZD0iTS4wMDMgMTIuMDMxYTEuMzggMS4zOCAwIDAgMCAyLjc1NyAwVjguNDhjMC0xLjU3Mi42NDgtMy4wMDggMS42ODYtNC4wNDJsLjA2My0uMDY4YTUuNzQyIDUuNzQyIDAgMCAxIDMuOTg4LTEuNjE2aDMyLjAxYTUuNzMgNS43MyAwIDAgMSA0LjA1IDEuNjg0IDUuNzEyIDUuNzEyIDAgMCAxIDEuNjg2IDQuMDQydjcxLjA0MmE1LjcwNyA1LjcwNyAwIDAgMS0xLjY4NiA0LjA0MmwtLjA2My4wNjlhNS43NDkgNS43NDkgMCAwIDEtMy45OSAxLjYxNUg4LjQ5YTUuNzIyIDUuNzIyIDAgMCAxLTQuMDQ4LTEuNjg0IDUuNzEyIDUuNzEyIDAgMCAxLTEuNjg2LTQuMDQyVjU4LjIwNmExLjM4IDEuMzggMCAwIDAtMi43NTcgMFY3OS41MmMwIDIuMzM0Ljk1OCA0LjQ1NyAyLjQ5MyA1Ljk5QTguNDg0IDguNDg0IDAgMCAwIDguNDkgODhoMzIuMDE1YzIuMjg2IDAgNC4zNzItLjkyIDUuOTA0LTIuNDA0bC4wOTctLjA4OEE4LjQ0MiA4LjQ0MiAwIDAgMCA0OSA3OS41MlY4LjQ3OWE4LjQ1IDguNDUgMCAwIDAtMi40OTYtNS45OUE4LjQ3OCA4LjQ3OCAwIDAgMCA0MC41MDYgMEg4LjQ5NGMtMi4yODcgMC00LjM3LjkyLTUuOTAxIDIuNDAzbC0uMDk4LjA5YTguNDYgOC40NiAwIDAgMC0yLjQ5MiA1Ljk5djMuNTQ4eiIvPgogICAgICAgIDxwYXRoIGQ9Ik05LjI1OCA3N0M4LjU2NSA3NyA4IDc2LjMyNiA4IDc1LjQ5OCA4IDc0LjY3MSA4LjU2NSA3NCA5LjI1OCA3NGg2LjQ4NGMuNjkzIDAgMS4yNTguNjcxIDEuMjU4IDEuNDk4IDAgLjgyOC0uNTY1IDEuNTAyLTEuMjU4IDEuNTAySDkuMjU4ek0yMS4zOTcgMTBDMjAuNjI3IDEwIDIwIDkuMzI2IDIwIDguNDk4IDIwIDcuNjcxIDIwLjYyOCA3IDIxLjM5NyA3aDcuMjA2QzI5LjM3MyA3IDMwIDcuNjcxIDMwIDguNDk4IDMwIDkuMzI2IDI5LjM3MiAxMCAyOC42MDMgMTBoLTcuMjA2eiIvPgogICAgPC9nPgo8L3N2Zz4K" />
+        </div>
+
+        <p>
+            „შემდეგ“ ღილაკზე დაჭერით ვაცხადებ თანხმობას, რომ ბანკის კლიენტად რეგისტრაციის (მათ შორის ანგარიშის გახსნის,
+            საკრედიტო/სადებეტო ბარათის დამზადების მიზნით) მიზნით, სს „ ვითიბი ბანკი ჯორჯიამ“ და სს „აიდენთითი ენდ თრასთ
+            სოლუშენსმა“ ან აუცილებლობის შემთხვევაში სხვა მესამე პირმა დაამუშავოს ჩემი პერსონალური, მათ შორის
+            განსაკუთრებული/ბიომეტრიული სახის მონაცემები. ასევე სსგს ბაზებიდან, აღნიშნული მიზნის უზრუნველსაყოფად
+            გამოითხოვონ ჩემი პერსონალური მონაცემები.
+        </p>
+        <button class="main-btn" id="kvalifika-start-button">შემდეგი</button>
+    </div>
+    <!-- <div id='kvalifika-qrcode'></div> -->
+</body>
+
+</html>

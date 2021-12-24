@@ -1,0 +1,78 @@
+<svg data-name="Layer 1" height="123" width="123" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121 120">
+    <style>
+        #arrows {
+            animation: rotate 3s infinite;
+            transform-origin: center;
+        }
+
+        @keyframes rotate {
+
+            0%,
+            100% {
+                opacity: .3;
+                transform: rotate(0);
+            }
+
+            60% {
+                transform: rotate(181deg);
+                opacity: 1;
+            }
+
+            70% {
+                transform: rotate(360deg);
+                opacity: .3;
+            }
+
+            100% {
+                opacity: .3;
+                transform: rotate(360deg);
+            }
+        }
+
+        #landscape {
+            animation: highlight 3s infinite;
+        }
+
+        #rotated {
+            animation: highlight 3s infinite;
+            animation-delay: 0.6s;
+            opacity: 0;
+            transform: translate(4px, 4px);
+        }
+
+        #portrait {
+            animation: highlight 3s infinite;
+            animation-delay: 1.2s;
+            opacity: 0;
+        }
+
+        @keyframes highlight {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <!-- <path id="arrows"
+        d="M12.35,82.6l6.56-7.06L-.25,56.39v3.53c0,31.75,24.2,57.46,55.45,60.48v-7.56C36,110.83,19.91,99.23,12.35,82.6Zm95.77-45.37-6.55,7.06,19.16,19.16V59.92a60,60,0,0,0-55.45-60V7c19.15,2,35.28,13.61,42.84,30.24Z" />
+     -->
+    <path id="arrows"
+        d="M54.2,119.29A59.78,59.78,0,0,1,.75,59.92V58.8L17.52,75.57l-6.35,6.84.27.6c7.61,16.73,23.93,28.44,42.76,30.73Zm48.76-75,6.35-6.84-.28-.61C101.43,20.09,85.1,8.39,66.28,6.1V1a58.81,58.81,0,0,1,53.45,58.89V61Z"
+        transform="translate(-0.75 -1.03)" />
+    <path id="landscape" fill="#000"
+        d="M34.29,55.93a4.84,4.84,0,0,0-5,5V91.11a4.84,4.84,0,0,0,5,5H91a4.83,4.83,0,0,0,5-5V60.89a4.83,4.83,0,0,0-5-5Zm56.9,35.18H34.52V60.89H91.19V91.11Z" />
+    <path id="rotated" fill="#000"
+        d="M54.34,26.11a4.85,4.85,0,0,0-7,0L26,47.48a4.84,4.84,0,0,0,0,7L66,94.57a4.85,4.85,0,0,0,7,0L94.41,73.2a4.86,4.86,0,0,0,0-7L54.34,26.11ZM69.7,91.23,29.63,51.16,51,29.79,91.07,69.86,69.7,91.23Z" />
+    <path id="portrait" fill="#000"
+        d="M95.91,34.44a4.84,4.84,0,0,0-5-5H60.73a4.85,4.85,0,0,0-5,5V91.11a4.84,4.84,0,0,0,5,5H91a4.83,4.83,0,0,0,5-5V34.44ZM60.73,91.35V34.68H91V91.35Z" />
+
+</svg>
